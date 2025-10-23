@@ -59,11 +59,7 @@ sqlite3 database.sqlite < database.sql
 
 3. Web sunucusunu başlatın
 
-## 👤 Varsayılan Giriş Bilgileri
 
-**Admin:**
-- Email: `admin@geticket.com`
-- Şifre: (database.sql'deki hash'li şifre)
 
 **Test için yeni kullanıcı oluşturabilirsiniz:** `/pages/register.php`
 
@@ -103,43 +99,6 @@ getticket/
 └── README.MD
 ```
 
-## 🎯 Kullanım
-
-1. **Yolcu olarak:**
-   - Kayıt olun
-   - Sefer arayın
-   - Koltuk seçin ve bilet alın
-   - Kupon kodu ile indirim kazanın
-
-2. **Firma Admin olarak:**
-   - Admin tarafından oluşturulan hesapla giriş yapın
-   - Yeni sefer ekleyin
-   - Rezervasyonları görüntüleyin
-   - Firma özel kupon oluşturun
-
-3. **Admin olarak:**
-   - Sistemdeki tüm verilere erişin
-   - Firma ve kullanıcı yönetin
-   - Genel kuponlar oluşturun
-   - Sistem istatistiklerini görüntüleyin
-
-## 📊 Veritabanı Tabloları
-
-- `users` - Kullanıcı bilgileri
-- `bus_companies` - Otobüs firmaları
-- `trips` - Seferler
-- `tickets` - Biletler
-- `coupons` - İndirim kuponları
-- `user_coupons` - Kupon kullanımları
-- `blocked_seats` - Bloke koltuklar
-
-## 🔒 Güvenlik
-
-- ✅ Password hashing (PHP password_hash)
-- ✅ SQL Injection koruması (Prepared Statements)
-- ✅ XSS koruması (htmlspecialchars)
-- ✅ Session yönetimi
-- ✅ Rol bazlı yetkilendirme
 
 ## 📝 Lisans
 
@@ -154,25 +113,3 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 ```
 
 ---
-
-### 3️⃣ **.gitignore Oluştur**
-```
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Database (opsiyonel - database.sqlite'ı da yükleyebilirsiniz)
-# database.sqlite
-
-# Environment
-.env
