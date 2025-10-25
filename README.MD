@@ -31,7 +31,7 @@ Modern web teknolojileri kullanılarak geliştirilmiş, dinamik ve çok kullanı
 
 1. Repoyu klonlayın:
 ```bash
-git clone https://github.com/KULLANICI_ADINIZ/getticket.git
+git clone https://github.com/alaaddininal5-pixel/getticket.git
 cd getticket
 ```
 
